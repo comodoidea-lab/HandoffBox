@@ -169,7 +169,7 @@ HandoffBox リポジトリ:
 ### One-liner / 一言プロンプト
 
 ```
-HandoffBox（https://github.com/comodoidea-lab/HandoffBox）の README を読んで、Handoff Issue を1つ作成して。
+HandoffBox（ https://github.com/comodoidea-lab/HandoffBox ）の README を読んで、Handoff Issue を1つ作成して。
 ```
 
 ### gh CLI example / 作成例
