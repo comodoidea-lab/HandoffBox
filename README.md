@@ -148,6 +148,9 @@ HandoffBox リポジトリ:
 - https://github.com/comodoidea-lab/HandoffBox
 - git@github.com:comodoidea-lab/HandoffBox.git
 
+##GitHub公式CLIを使用してログイン##
+Issue 作成は `gh` CLI を使う。未ログインなら `gh auth login` を実行する。Chrome 等のブラウザ操作は使わない。
+
 ## 手順
 1. 上記リポジトリの README.md を読む（初回は Web または clone で取得）
 2. HandoffBox に Issue を1つだけ作成する
@@ -169,7 +172,7 @@ HandoffBox リポジトリ:
 ### One-liner / 一言プロンプト
 
 ```
-HandoffBox（https://github.com/comodoidea-lab/HandoffBox）の README を読んで、Handoff Issue を1つ作成して。
+HandoffBox（https://github.com/comodoidea-lab/HandoffBox）の README を読んで、Handoff Issue を1つ作成して。##GitHub公式CLIを使用してログイン##
 ```
 
 ### gh CLI example / 作成例
