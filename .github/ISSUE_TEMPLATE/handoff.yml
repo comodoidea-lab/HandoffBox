@@ -1,0 +1,137 @@
+name: Handoff
+description: Record public-safe project context and the smallest concrete next step.
+title: "Handoff: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        HandoffBox is public. Do not include personal information, credentials,
+        local absolute paths, customer details, unpublished sourcing candidates,
+        or confidential private-repository information.
+
+  - type: input
+    id: project
+    attributes:
+      label: Project / プロジェクト
+      placeholder: my-project
+    validations:
+      required: true
+
+  - type: dropdown
+    id: actor
+    attributes:
+      label: Actor / 記録者
+      description: Who prepared this handoff?
+      options:
+        - human
+        - hermes-pm
+        - gemini-researcher
+        - codex-builder
+        - other-ai-agent
+    validations:
+      required: true
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status / 状態
+      options:
+        - proposed
+        - approved
+        - executing
+        - blocked
+        - review
+        - verified
+    validations:
+      required: true
+
+  - type: textarea
+    id: stopped_at_human
+    attributes:
+      label: 止めた場所
+      description: 明日の自分向けに、平易に書いてください。
+    validations:
+      required: true
+
+  - type: textarea
+    id: why_stopped_human
+    attributes:
+      label: 止めた理由
+      description: ブロッカー、判断、時間切れなど。
+    validations:
+      required: true
+
+  - type: textarea
+    id: next_action
+    attributes:
+      label: 次の1手（15分以内）
+      description: 再開時に最初に行う、最小の具体的な作業。
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Public-safe repo, branch/commit, deployment, issue, and relative paths only.
+      placeholder: |
+        - Public repo:
+        - Branch / commit:
+        - Deployment:
+        - Related issue:
+        - Relative paths:
+    validations:
+      required: true
+
+  - type: textarea
+    id: stopped_at
+    attributes:
+      label: Stopped at
+      description: Specific files, features, and unfinished tasks.
+    validations:
+      required: true
+
+  - type: textarea
+    id: why_stopped
+    attributes:
+      label: Why stopped
+      description: Technical blockers, decisions, failed attempts, or constraints.
+    validations:
+      required: true
+
+  - type: textarea
+    id: next_step
+    attributes:
+      label: Next step
+      description: Include only public-safe commands or relative paths when known.
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence / 根拠
+      description: Public links to commits, PRs, tests, logs, deployments, or issues. Do not attach sensitive screenshots.
+      placeholder: |
+        - Commit:
+        - PR:
+        - Tests:
+
+  - type: dropdown
+    id: approval
+    attributes:
+      label: Approval required / 人間の承認
+      description: Is human approval required before the next action?
+      options:
+        - "yes"
+        - "no"
+        - unknown
+    validations:
+      required: true
+
+  - type: textarea
+    id: resume_notes
+    attributes:
+      label: Resume notes
+      description: Public-safe related files, known traps, and previous attempt results.
