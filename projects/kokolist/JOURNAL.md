@@ -13,11 +13,18 @@ Public-safe work log for Koko List.
 - Added a small add-item microinteraction so newly added list items feel immediately acknowledged.
 - Adjusted first-run empty-state copy toward generic place registration instead of assuming the current location is the place to save.
 - Vendored Driver.js 1.6.0 assets locally and included them in the PWA cache so onboarding no longer depends on CDN delivery.
+- Started Phase 1 foundation cleanup by splitting storage, state, location matching, static data, DOM helpers, onboarding definitions, and view rendering into smaller modules.
+- Added IndexedDB-backed app state persistence with localStorage fallback and legacy localStorage migration.
+- Added local JSON backup export/import from the settings screen so users can save and restore on-device data before any account or cloud sync work.
 - Evidence: Unknown / 不明
 - Code reference: `f5b6672` (`feat: add Driver.js onboarding`; link omitted because repository visibility was not publicly confirmed)
 - Code reference: `04e7dac` (`feat: add post-place onboarding preview`; link omitted because repository visibility was not publicly confirmed)
 - Code reference: `f745528` (`copy: make first-run place registration wording generic`; link omitted because repository visibility was not publicly confirmed)
 - Code reference: `192a78e` (`chore: vendor Driver.js assets`; link omitted because repository visibility was not publicly confirmed)
+- Code reference: `f4472e5` (`refactor: split core storage state and location logic`; link omitted because repository visibility was not publicly confirmed)
+- Code reference: `3eec958` (`refactor: extract view rendering module`; link omitted because repository visibility was not publicly confirmed)
+- Code reference: `c1497c1` (`feat: persist app state with IndexedDB fallback`; link omitted because repository visibility was not publicly confirmed)
+- Code reference: `8f7929e` (`feat: add local backup import export`; link omitted because repository visibility was not publicly confirmed)
 
 ## Notes For Future Agents
 

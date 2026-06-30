@@ -59,3 +59,19 @@ Record settled decisions and why they were made.
 - Rationale: The interaction should make task creation feel responsive and useful without making the calm utility UI feel decorative.
 - Consequences: Microinteractions should stay short, local to the changed item, and avoid celebratory effects that would distract from repeated use.
 - Evidence: Code reference `04e7dac` (`feat: add post-place onboarding preview`; link omitted because repository visibility was not publicly confirmed)
+
+### 2026-06-30: Keep persistence local-first with IndexedDB and fallback storage
+
+- Status: Accepted
+- Decision: Store app state in IndexedDB while keeping localStorage as a fallback and migration source.
+- Rationale: The MVP should preserve on-device behavior while making storage more robust than prototype-only localStorage.
+- Consequences: Future persistence work should preserve migration paths and avoid requiring accounts or cloud sync unless the privacy model is explicitly approved.
+- Evidence: Code reference `c1497c1` (`feat: persist app state with IndexedDB fallback`; link omitted because repository visibility was not publicly confirmed)
+
+### 2026-06-30: Add local JSON backup before cloud sync
+
+- Status: Accepted
+- Decision: Provide local JSON export/import for user backup before adding account or cloud sync features.
+- Rationale: A local-first app still needs a simple recovery path, and JSON backup reduces data-loss concern without changing the backend or privacy model.
+- Consequences: Backup files should remain user-controlled, and future schema changes should keep import compatibility in mind.
+- Evidence: Code reference `8f7929e` (`feat: add local backup import export`; link omitted because repository visibility was not publicly confirmed)
