@@ -41,8 +41,8 @@ Record settled decisions and why they were made.
 - Status: Accepted
 - Decision: Use Driver.js for the first guided onboarding implementation.
 - Rationale: Driver.js is lightweight, MIT licensed, dependency-free, and fits a static PWA without requiring a framework migration.
-- Consequences: The current implementation uses a fixed CDN version. A future PWA hardening pass should decide whether to vendor the Driver.js assets locally for offline reliability.
-- Evidence: Code reference `f5b6672` (`feat: add Driver.js onboarding`; link omitted because repository visibility was not publicly confirmed)
+- Consequences: The implementation vendors Driver.js 1.6.0 assets locally and caches them with the PWA for more reliable onboarding delivery.
+- Evidence: Code references `f5b6672` (`feat: add Driver.js onboarding`) and `192a78e` (`chore: vendor Driver.js assets`; links omitted because repository visibility was not publicly confirmed)
 
 ### 2026-06-30: Use temporary previews after place registration
 

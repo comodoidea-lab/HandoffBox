@@ -12,10 +12,12 @@ Public-safe work log for Koko List.
 - Added a post-place-registration onboarding preview that shows temporary example tasks and shortcuts without saving them as user data.
 - Added a small add-item microinteraction so newly added list items feel immediately acknowledged.
 - Adjusted first-run empty-state copy toward generic place registration instead of assuming the current location is the place to save.
+- Vendored Driver.js 1.6.0 assets locally and included them in the PWA cache so onboarding no longer depends on CDN delivery.
 - Evidence: Unknown / 不明
 - Code reference: `f5b6672` (`feat: add Driver.js onboarding`; link omitted because repository visibility was not publicly confirmed)
 - Code reference: `04e7dac` (`feat: add post-place onboarding preview`; link omitted because repository visibility was not publicly confirmed)
 - Code reference: `f745528` (`copy: make first-run place registration wording generic`; link omitted because repository visibility was not publicly confirmed)
+- Code reference: `192a78e` (`chore: vendor Driver.js assets`; link omitted because repository visibility was not publicly confirmed)
 
 ## Notes For Future Agents
 
