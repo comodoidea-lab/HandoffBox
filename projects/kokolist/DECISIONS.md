@@ -43,3 +43,19 @@ Record settled decisions and why they were made.
 - Rationale: Driver.js is lightweight, MIT licensed, dependency-free, and fits a static PWA without requiring a framework migration.
 - Consequences: The current implementation uses a fixed CDN version. A future PWA hardening pass should decide whether to vendor the Driver.js assets locally for offline reliability.
 - Evidence: Code reference `f5b6672` (`feat: add Driver.js onboarding`; link omitted because repository visibility was not publicly confirmed)
+
+### 2026-06-30: Use temporary previews after place registration
+
+- Status: Accepted
+- Decision: After a user registers a place, show temporary preview tasks and app shortcuts during the follow-up onboarding instead of saving dummy data.
+- Rationale: Preview content helps explain the benefit of a place-based list without confusing example content for user-owned data.
+- Consequences: Preview content must be clearly labeled as unsaved and must disappear when the guide ends or is closed.
+- Evidence: Code reference `04e7dac` (`feat: add post-place onboarding preview`; link omitted because repository visibility was not publicly confirmed)
+
+### 2026-06-30: Use subtle feedback for task creation
+
+- Status: Accepted
+- Decision: Give a newly added task a short, restrained highlight animation.
+- Rationale: The interaction should make task creation feel responsive and useful without making the calm utility UI feel decorative.
+- Consequences: Microinteractions should stay short, local to the changed item, and avoid celebratory effects that would distract from repeated use.
+- Evidence: Code reference `04e7dac` (`feat: add post-place onboarding preview`; link omitted because repository visibility was not publicly confirmed)
