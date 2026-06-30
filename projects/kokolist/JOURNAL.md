@@ -26,6 +26,15 @@ Public-safe work log for Koko List.
 - Code reference: `c1497c1` (`feat: persist app state with IndexedDB fallback`; link omitted because repository visibility was not publicly confirmed)
 - Code reference: `8f7929e` (`feat: add local backup import export`; link omitted because repository visibility was not publicly confirmed)
 
+## 2026-07-01
+
+- Continued Phase 1 foundation cleanup by moving app-level state mutation actions into a dedicated action module.
+- Added arrival-state handling so the app distinguishes between location permission, location availability, matching a registered place, and being outside registered place ranges.
+- Added a localhost/check-mode development location simulator for testing arrival and out-of-range behavior without physically moving devices.
+- Kept Google Maps and Places API integration out of the critical path for the current core check; current matching uses browser location coordinates against stored place coordinates.
+- Evidence: Unknown / 不明
+- Code reference: `872d569` (`refactor: extract app action mutations`; link omitted because repository visibility was not publicly confirmed)
+
 ## Notes For Future Agents
 
 - Keep detailed implementation work in the code repository.

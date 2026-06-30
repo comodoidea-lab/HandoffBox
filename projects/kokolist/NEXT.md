@@ -4,14 +4,15 @@
 
 The project has a clickable PWA prototype based on the Serene Utility visual direction.
 
-The current documented prototype supports the main place list, registered places, add-place flow, empty state, sample local data, checklist editing, basic location matching, PWA manifest, service worker, IndexedDB-backed local persistence with fallback storage, app shortcuts, locally vendored Driver.js onboarding, post-registration preview onboarding, subtle item-add feedback, and local JSON backup export/import.
+The current documented prototype supports the main place list, registered places, add-place flow, empty state, sample local data, checklist editing, basic location matching, arrival-state handling, PWA manifest, service worker, IndexedDB-backed local persistence with fallback storage, app shortcuts, locally vendored Driver.js onboarding, post-registration preview onboarding, subtle item-add feedback, local JSON backup export/import, and a localhost-only location simulator for development verification.
 
 ## Next Concrete Actions
 
-1. Continue Phase 1 foundation cleanup by separating event handling and action orchestration from `app.js`.
-2. Add a small compatibility check for backup import/export across future schema versions.
-3. Keep manual place registration usable without Google Maps or network APIs.
-4. Defer account/cloud sync until the privacy model and user need are explicitly approved.
+1. Use the development location simulator to test arrival matching, out-of-range behavior, and manual place selection across representative place data.
+2. Continue separating event handling from `app.js` so UI events, state mutations, and location orchestration remain easy to test.
+3. Add a small compatibility check for backup import/export across future schema versions.
+4. Keep manual place registration usable without Google Maps or network APIs.
+5. Defer account/cloud sync until the privacy model and user need are explicitly approved.
 
 ## Blockers
 

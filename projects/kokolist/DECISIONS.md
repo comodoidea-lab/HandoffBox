@@ -75,3 +75,19 @@ Record settled decisions and why they were made.
 - Rationale: A local-first app still needs a simple recovery path, and JSON backup reduces data-loss concern without changing the backend or privacy model.
 - Consequences: Backup files should remain user-controlled, and future schema changes should keep import compatibility in mind.
 - Evidence: Code reference `8f7929e` (`feat: add local backup import export`; link omitted because repository visibility was not publicly confirmed)
+
+### 2026-07-01: Build arrival matching before paid map integrations
+
+- Status: Accepted
+- Decision: Implement the core arrival-matching path with browser-provided coordinates and stored place coordinates before adding Google Maps or Places API integrations.
+- Rationale: The MVP value is proving that opening the app at a registered place shows the useful list; map and place search APIs improve registration quality but are not required for the first core behavior.
+- Consequences: Manual/current-location place registration must remain usable, and future map provider work should enhance setup without becoming a hard dependency for basic reminders.
+- Evidence: Unknown / 不明
+
+### 2026-07-01: Keep the location simulator development-only
+
+- Status: Accepted
+- Decision: Expose the location simulator only in localhost or explicit check-mode contexts.
+- Rationale: The simulator is useful for testing arrival and out-of-range behavior but should not become part of the normal user-facing product.
+- Consequences: Future debug tools should stay clearly separated from production user flows and should not write private location data into public logs.
+- Evidence: Unknown / 不明
