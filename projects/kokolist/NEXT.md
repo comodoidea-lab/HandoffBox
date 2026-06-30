@@ -9,11 +9,10 @@ The current documented prototype supports the main place list, registered places
 ## Next Concrete Actions
 
 1. Decide whether to vendor Driver.js assets locally instead of relying on CDN delivery.
-2. Adjust first-run and empty-state copy toward place-first wording rather than current-location-first wording.
-3. Start Phase 1 foundation cleanup by separating app state, storage, location matching, and UI rendering into smaller modules.
-4. Replace prototype `localStorage` persistence with IndexedDB while preserving the existing user-facing behavior.
-5. Add local export/import for backup before any account or cloud sync work.
-6. Keep manual place registration usable without Google Maps or network APIs.
+2. Start Phase 1 foundation cleanup by separating app state, storage, location matching, and UI rendering into smaller modules.
+3. Replace prototype `localStorage` persistence with IndexedDB while preserving the existing user-facing behavior.
+4. Add local export/import for backup before any account or cloud sync work.
+5. Keep manual place registration usable without Google Maps or network APIs.
 
 ## Blockers
 
